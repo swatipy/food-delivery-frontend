@@ -35,19 +35,11 @@ function ManageRestaurants() {
         
     const handleDelete = (id) => {
 
-                if (
+        if ( !window.confirm("Delete this restaurant?")) {
 
-                !window.confirm(
+            return;
 
-                "Delete this restaurant?"
-
-                )
-
-                ) {
-
-                    return;
-
-                }
+        }
 
   deleteRestaurant(id)
 
