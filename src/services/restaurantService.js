@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const API_URL = "http://localhost:8080/restaurants";
+import config from "../config"; 
+const API_URL = config.restaurantsUrl;
 
 export const getRestaurants = () => {
   return axios.get(API_URL);
